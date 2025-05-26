@@ -1,0 +1,91 @@
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* Container for the form */
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  border: 2px solid #ddd;
+}
+
+/* Header styling */
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #4caf50;  /* Green color */
+}
+
+/* Label styling */
+label {
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: block;
+  color: #555;
+}
+
+/* Input fields styling */
+input[type="text"], input[type="email"], input[type="number"], select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Input focus effect */
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, select:focus {
+  border: 1px solid #4caf50;  /* Green focus border */
+  background-color: #e8f5e9;  /* Light green background */
+  outline: none;
+}
+
+/* Button styling */
+button {
+  padding: 12px;
+  background-color: #4caf50;  /* Green button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #388e3c;  /* Darker green on hover */
+}
+
+/* Form styling adjustments */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure form fields are spaced appropriately */
+input[type="text"], input[type="email"], input[type="number"], select {
+  margin-bottom: 20px; /* Adds space between inputs */
+}
+
+/* Remove default margin and padding from select and input */
+select, input[type="text"], input[type="number"], input[type="email"] {
+  box-sizing: border-box;
+}
